@@ -1,0 +1,3 @@
+name: sample-ec2
+runtime: nodejs
+description: testing
