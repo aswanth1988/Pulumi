@@ -1,5 +1,5 @@
 config:
   aws:region: ap-south-1
-  ec2:bucketname: sample-pulumi
-  ec2:lucky: example
-  ec2:instance_type: t2.micro
+  aws-typescript:bucketname: sample-pulumi
+  aws-typescript:lucky: example
+  aws-typescript:instance_type: t2.micro
