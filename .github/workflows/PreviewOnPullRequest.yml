@@ -23,6 +23,6 @@ jobs:
       - uses: pulumi/actions@v3
         with:
           command: preview
-          stack-name: SanthipriyaK / sample-ec2 / dev
+          stack-name: dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
