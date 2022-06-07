@@ -32,16 +32,6 @@ const group = new aws.ec2.SecurityGroup("web-secgrp", {
     ],
 });
 
-import * as awsx from "@pulumi/awsx";
-
-// Allocate a new VPC with the default settings:
-const vpc = new awsx.ec2.Vpc("custom");
-
-// Export a few resulting fields to make them easy to use:
-export const vpcId = vpc.vpcId;
-export const privateSubnetIds = vpc.privateSubnetIds;
-export const publicSubnetIds = vpc.publicSubnetIds;
-
 const server = new aws.ec2.Instance("web-server-www", {
     tags: { "Name":"Dev"},
     instanceType: temp, // t2.micro is available in the AWS free tier
